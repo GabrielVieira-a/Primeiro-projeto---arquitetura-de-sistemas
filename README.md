@@ -117,6 +117,78 @@ http://localhost:3000
 
 ---
 
+## 📥 Requisições e Payloads
+
+### 🔹 Criar Tarefa
+
+```bash
+curl -X POST http://localhost:3000/tarefas \
+-H "Content-Type: application/json" \
+-d '{"titulo":"Estudar","descricao":"Prova","status":"pendente"}'
+```
+
+### 🔹 Listar Tarefas
+
+```bash
+curl http://localhost:3000/tarefas
+```
+
+---
+
+### 🔹 Atualizar Tarefa
+
+```bash
+curl -X PUT http://localhost:3000/tarefas/1 \
+-H "Content-Type: application/json" \
+-d '{"titulo":"Atualizado","descricao":"Nova","status":"concluida"}'
+```
+
+---
+
+### 🔹 Deletar Tarefa
+
+```bash
+curl -X DELETE http://localhost:3000/tarefas/1
+```
+
+---
+
+### 🔹 Criar Usuário
+
+```bash
+curl -X POST http://localhost:3000/usuarios \
+-H "Content-Type: application/json" \
+-d '{"nome":"Gabriel","email":"gabriel@email.com"}'
+```
+
+---
+
+### 🔹 Listar Usuários
+
+```bash
+curl http://localhost:3000/usuarios
+```
+
+---
+
+### 🔹 Atualizar Usuário
+
+```bash
+curl -X PUT http://localhost:3000/usuarios/1 \
+-H "Content-Type: application/json" \
+-d '{"nome":"Gabriel Atualizado","email":"novo@email.com"}'
+```
+
+---
+
+### 🔹 Deletar Usuário
+
+```bash
+curl -X DELETE http://localhost:3000/usuarios/1
+```
+
+---
+
 ## 📸 Evidências
 
 As evidências de execução (prints do sistema) foram geradas utilizando ferramentas como Postman, demonstrando o funcionamento completo das operações CRUD.
