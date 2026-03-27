@@ -18,7 +18,8 @@ O sistema foi desenvolvido para aplicar na prática conceitos de arquitetura de 
 
 ## 👥 Integrantes
 
-* Gabriel (adicione o nome da dupla aqui)
+* Gabriel Vieira
+* Davi Rodrigues
 
 ---
 
