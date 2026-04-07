@@ -189,6 +189,97 @@ curl -X DELETE http://localhost:3000/usuarios/1
 
 ---
 
+NO POSTMAN
+🧪 TESTANDO TEU SISTEMA NO POSTMAN
+🟢 1. CRIAR USUÁRIO
+👉 No Postman:
+Escolhe:
+👉 POST
+URL:
+http://localhost:3000/usuarios
+Vai em:
+👉 Body
+Marca:
+👉 raw → JSON
+Coloca isso:
+{
+  "nome": "Davi",
+  "email": "davi@email.com"
+}
+Clica:
+👉 Send
+
+✅ Resultado esperado:
+
+{
+  "id": 1,
+  "nome": "Davi",
+  "email": "davi@email.com"
+}
+🟢 2. LISTAR USUÁRIOS
+Muda pra:
+👉 GET
+URL:
+http://localhost:3000/usuarios
+Clica:
+👉 Send
+
+✅ Vai aparecer:
+
+[
+  {
+    "id": 1,
+    "nome": "Davi",
+    "email": "davi@email.com"
+  }
+]
+🟢 3. CRIAR TAREFA
+
+POST:
+
+http://localhost:3000/tarefas
+
+Body:
+
+{
+  "titulo": "Estudar",
+  "descricao": "Prova",
+  "status": "pendente"
+}
+🟢 4. LISTAR TAREFAS
+
+GET:
+
+http://localhost:3000/tarefas
+🎤 FRASE PRA USAR NA APRESENTAÇÃO
+
+“Estou utilizando o Postman para simular requisições HTTP à API.”
+
+💥 Isso mostra profissionalismo
+
+🚨 ERROS COMUNS
+❌ “Cannot GET /usuarios”
+
+👉 servidor não está rodando
+
+❌ Nada acontece
+
+👉 esqueceu de clicar em Send
+
+❌ Erro JSON
+
+👉 esqueceu vírgula ou chave {}
+
+⚡ SE TIVER COM PRESSA
+
+👉 Só testa isso:
+
+No navegador:
+
+http://localhost:3000/usuarios
+
+👉 já prova que funciona
+
 ## 📸 Evidências
 
 As evidências de execução (prints do sistema) foram geradas utilizando ferramentas como Postman, demonstrando o funcionamento completo das operações CRUD.
