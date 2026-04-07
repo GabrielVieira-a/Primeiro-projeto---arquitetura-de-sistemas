@@ -189,96 +189,77 @@ curl -X DELETE http://localhost:3000/usuarios/1
 
 ---
 
-NO POSTMAN
-🧪 TESTANDO TEU SISTEMA NO POSTMAN
-🟢 1. CRIAR USUÁRIO
-👉 No Postman:
-Escolhe:
-👉 POST
+🚀 Como executar o projeto
+1. Acessar a pasta do projeto
+cd sistema-tarefas
+2. Instalar as dependências
+npm install
+3. Executar o servidor
+node server.js
+
+O servidor será iniciado em:
+
+http://localhost:3000
+🧪 Testando a API no Postman
+
+👉 Abra o Postman
+
+📌 Tarefas
+🔹 Criar Tarefa
+Método: POST
 URL:
-http://localhost:3000/usuarios
-Vai em:
-👉 Body
-Marca:
-👉 raw → JSON
-Coloca isso:
-{
-  "nome": "Davi",
-  "email": "davi@email.com"
-}
-Clica:
-👉 Send
-
-✅ Resultado esperado:
-
-{
-  "id": 1,
-  "nome": "Davi",
-  "email": "davi@email.com"
-}
-🟢 2. LISTAR USUÁRIOS
-Muda pra:
-👉 GET
-URL:
-http://localhost:3000/usuarios
-Clica:
-👉 Send
-
-✅ Vai aparecer:
-
-[
-  {
-    "id": 1,
-    "nome": "Davi",
-    "email": "davi@email.com"
-  }
-]
-🟢 3. CRIAR TAREFA
-
-POST:
-
 http://localhost:3000/tarefas
-
-Body:
-
+Body → raw → JSON:
 {
   "titulo": "Estudar",
   "descricao": "Prova",
   "status": "pendente"
 }
-🟢 4. LISTAR TAREFAS
-
-GET:
-
+🔹 Listar Tarefas
+Método: GET
+URL:
 http://localhost:3000/tarefas
-🎤 FRASE PRA USAR NA APRESENTAÇÃO
-
-“Estou utilizando o Postman para simular requisições HTTP à API.”
-
-💥 Isso mostra profissionalismo
-
-🚨 ERROS COMUNS
-❌ “Cannot GET /usuarios”
-
-👉 servidor não está rodando
-
-❌ Nada acontece
-
-👉 esqueceu de clicar em Send
-
-❌ Erro JSON
-
-👉 esqueceu vírgula ou chave {}
-
-⚡ SE TIVER COM PRESSA
-
-👉 Só testa isso:
-
-No navegador:
-
+🔹 Atualizar Tarefa
+Método: PUT
+URL:
+http://localhost:3000/tarefas/1
+Body → raw → JSON:
+{
+  "titulo": "Atualizado",
+  "descricao": "Nova",
+  "status": "concluida"
+}
+🔹 Deletar Tarefa
+Método: DELETE
+URL:
+http://localhost:3000/tarefas/1
+📌 Usuários
+🔹 Criar Usuário
+Método: POST
+URL:
 http://localhost:3000/usuarios
-
-👉 já prova que funciona
+Body → raw → JSON:
+{
+  "nome": "Davi",
+  "email": "davi@email.com"
+}
+🔹 Listar Usuários
+Método: GET
+URL:
+http://localhost:3000/usuarios
+🔹 Atualizar Usuário
+Método: PUT
+URL:
+http://localhost:3000/usuarios/1
+Body → raw → JSON:
+{
+  "nome": "Davi Atualizado",
+  "email": "novo@email.com"
+}
+🔹 Deletar Usuário
+Método: DELETE
+URL:
+http://localhost:3000/usuarios/1
 
 ## 📸 Evidências
 
